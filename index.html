@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="cal">
+        <input type="text" disabled id="inp">
+        <table>
+            <tr>
+                <td><button class="light_white" onclick="clean()" onclick="getvalue(AC)">AC</button></td>
+                <td><button class="light_white" onclick="minus()" onclick="getValue(C)">C</button></td>
+                <td><button class="light_white" onclick="getValue('%')">%</button></td>
+                <td><button class="orange" onclick="getValue('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="light_black" onclick="getValue(7)">7</button></td>
+                <td><button class="light_black" onclick="getValue(8)">8</button></td>
+                <td><button class="light_black" onclick="getValue(9)">9</button></td>
+                <td><button class="orange" onclick="getValue('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="light_black" onclick="getValue(4)">4</button></td>
+                <td><button class="light_black" onclick="getValue(5)">5</button></td>
+                <td><button class="light_black" onclick="getValue(6)">6</button></td>
+                <td><button class="orange" onclick="getValue('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="light_black" onclick="getValue(1)">1</button></td>
+                <td><button class="light_black" onclick="getValue(2)">2</button></td>
+                <td><button class="light_black" onclick="getValue(3)">3</button></td>
+                <td><button class="orange" onclick="getValue('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="border" onclick="getValue(0)">0</button></td>
+                <td><button class="light_black" onclick="getValue('.')">.</button></td>
+                <td><button class="orange" onclick="calc()" onclick="getValue('=')">=</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+<script src="App.js"></script>
+
+</html>
